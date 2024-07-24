@@ -68,11 +68,11 @@ export default function BookSearch() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-100 py-8">
+    <div className="min-h-screen bg-skin-light py-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-3xl font-bold text-center mb-8 text-gray-800">Book Search App</h1>
+        
         <div className="bg-white rounded-lg shadow-sm overflow-hidden mb-8">
-          <div className="px-6 py-5 bg-gray-50">
+          <div className="bg-yellow-light px-6 py-5 bg-gray-50">
             <h2 className="text-lg font-semibold text-gray-700">Book Details</h2>
           </div>
           <div className="px-6 py-5">
@@ -88,7 +88,7 @@ export default function BookSearch() {
                   onChange={(e) => setIsbn(e.target.value)}
                 />
               </div>
-              <Button type="submit" className="bg-blue-600 hover:bg-blue-700 text-white" disabled={loading}>
+              <Button type="submit" className="bg-skin-light hover:bg-yellow-light text-black" disabled={loading}>
                 {loading ? 'Searching...' : 'Search'}
               </Button>
             </form>
@@ -102,7 +102,7 @@ export default function BookSearch() {
         )}
         {bookInfo && (
           <div className="bg-white rounded-lg shadow-sm overflow-hidden">
-            <div className="px-6 py-4 bg-gray-50 flex justify-between items-center">
+            <div className="bg-yellow-light px-6 py-4 bg-gray-50 flex justify-between items-center">
               <h2 className="text-lg font-semibold text-gray-700">Search Results</h2>
               <div className="flex items-center gap-2">
                 <Button onClick={copyBookInfo} className="bg-green-600 hover:bg-green-700 text-white">
@@ -142,6 +142,13 @@ export default function BookSearch() {
           </div>
         )}
       </div>
+      <footer className="bg-brown-light py-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p className="text-center text-sm text-text">
+            Book code search by ttt-tkmr
+          </p>
+        </div>
+      </footer>
     </div>
   )
 }

@@ -9,12 +9,12 @@ module.exports = {
     extend: {
       colors: {
         'skin': {
-          light: '#F5E6D3',
-          DEFAULT: '#E6D5BA',
+          light: '#F0F0F0',
+          DEFAULT: '#FBE233',
           dark: '#D7C4A1',
         },
-        'brown': {
-          light: '#C4B7A6',
+        'yellow': {
+          light: '#FBE233',
           DEFAULT: '#B5A48E',
           dark: '#A69276',
         },
